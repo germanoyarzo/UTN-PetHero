@@ -1,0 +1,113 @@
+[
+    {
+        "id": 1,
+        "idOwner": 2,
+        "race": "Pastor Aleman",
+        "size": "big",
+        "vaccination": {
+            "name": "recetas.jpg",
+            "full_path": "recetas.jpg",
+            "type": "image\/jpeg",
+            "tmp_name": "C:\\xampp\\tmp\\php2014.tmp",
+            "error": 0,
+            "size": 66040
+        },
+        "description": "Perro amigable y le gusta jugar",
+        "image": {
+            "name": "pastor.jpg",
+            "full_path": "pastor.jpg",
+            "type": "image\/jpeg",
+            "tmp_name": "C:\\xampp\\tmp\\php2015.tmp",
+            "error": 0,
+            "size": 9469
+        }
+    },
+    {
+        "id": 2,
+        "idOwner": 8,
+        "race": "Pastor Aleman",
+        "size": "big",
+        "vaccination": {
+            "name": "recetas.jpg",
+            "full_path": "recetas.jpg",
+            "type": "image\/jpeg",
+            "tmp_name": "C:\\xampp\\tmp\\php27C2.tmp",
+            "error": 0,
+            "size": 66040
+        },
+        "description": "Perro amigable y le gusta jugar",
+        "image": {
+            "name": "pastor.jpg",
+            "full_path": "pastor.jpg",
+            "type": "image\/jpeg",
+            "tmp_name": "C:\\xampp\\tmp\\php27C3.tmp",
+            "error": 0,
+            "size": 9469
+        }
+    },
+    {
+        "id": 3,
+        "idOwner": 8,
+        "race": "caniche",
+        "size": "small",
+        "vaccination": {
+            "name": "vacunacioncaniche.jpg",
+            "type": "image\/jpeg",
+            "tmp_name": "C:\\xampp\\tmp\\php55A4.tmp",
+            "error": 0,
+            "size": 37606
+        },
+        "description": "caniche blanco",
+        "image": {
+            "name": "canichetoy.jpg",
+            "type": "image\/jpeg",
+            "tmp_name": "C:\\xampp\\tmp\\php55B4.tmp",
+            "error": 0,
+            "size": 119240
+        }
+    },
+    {
+        "id": 4,
+        "idOwner": 8,
+        "race": "Breton",
+        "size": "medium",
+        "vaccination": {
+            "name": "recetas.jpg",
+            "full_path": "recetas.jpg",
+            "type": "image\/jpeg",
+            "tmp_name": "C:\\xampp\\tmp\\phpF498.tmp",
+            "error": 0,
+            "size": 66040
+        },
+        "description": "Cazador",
+        "image": {
+            "name": "breton.jpg",
+            "full_path": "breton.jpg",
+            "type": "image\/jpeg",
+            "tmp_name": "C:\\xampp\\tmp\\phpF4F7.tmp",
+            "error": 0,
+            "size": 252305
+        }
+    },
+    {
+        "id": 5,
+        "idOwner": 1,
+        "race": "caniche",
+        "size": "small",
+        "vaccination": {
+            "name": "vacunacioncaniche.jpg",
+            "type": "image\/jpeg",
+            "tmp_name": "C:\\xampp\\tmp\\php552A.tmp",
+            "error": 0,
+            "size": 37606
+        },
+        "description": "caniche blanco",
+        "image": {
+            "name": "canichetoy.jpg",
+            "type": "image\/jpeg",
+            "tmp_name": "C:\\xampp\\tmp\\php552B.tmp",
+            "error": 0,
+            "size": 119240
+        }
+    }
+]

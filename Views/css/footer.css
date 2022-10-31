@@ -1,0 +1,20 @@
+.footer {
+    width: 100%; 
+    background-color: #39ace7;
+    padding: 15px 0;
+    font-weight: 700;
+}
+
+.footer__container{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer__title{
+    color: white;
+}
+
+.footer__copyright--item{
+    color: white;
+}

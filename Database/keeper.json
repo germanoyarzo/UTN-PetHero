@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "size": "small",
+        "salary": "2000",
+        "available": "true",
+        "dateStart": "2022-10-25",
+        "dateEnd": "2022-10-26"
+    },
+    {
+        "id": 2,
+        "size": "medium",
+        "salary": "3000",
+        "available": "true",
+        "dateStart": "2022-10-24",
+        "dateEnd": "2022-10-31"
+    },
+    {
+        "id": 3,
+        "size": "big",
+        "salary": "3000",
+        "available": "true",
+        "dateStart": "2022-10-27",
+        "dateEnd": "2022-10-31"
+    }
+]

@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box
+}
+
+.navbar {
+  width: 100%;
+  background-color: #39ace7;
+  overflow: auto;
+  padding: 10px 0;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  max-width: 150px;
+  justify-content: center;
+  padding: 5px 35px 5px 20px;
+  border-radius: 9px;
+}
+
+.navbar i {
+  padding-right: 10px;
+}
+
+.navbar a:hover {
+  background-color: #00517a;
+  color: white;
+}

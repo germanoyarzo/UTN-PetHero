@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "email": "germa@gmail.com",
+        "password": "123456",
+        "role": "Owner",
+        "firstName": "german",
+        "lastName": "oyarzo",
+        "dni": "36363950",
+        "phoneNumber": "21223232"
+    },
+    {
+        "id": 2,
+        "email": "fran@gmail.com",
+        "password": "123456",
+        "role": "Keeper",
+        "firstName": "fran",
+        "lastName": "logaretto",
+        "dni": "3555445",
+        "phoneNumber": "12323"
+    },
+    {
+        "id": 3,
+        "email": "santiago@gmail.com",
+        "password": "123456",
+        "role": "Owner",
+        "firstName": "santiago",
+        "lastName": "lopez",
+        "dni": "35565656",
+        "phoneNumber": "22323"
+    },
+    {
+        "id": 4,
+        "email": "pepe@gmail.com",
+        "password": "123456",
+        "role": "Keeper",
+        "firstName": "pepe",
+        "lastName": "argento",
+        "dni": "10566556",
+        "phoneNumber": "1132323"
+    },
+    {
+        "id": 8,
+        "email": "franlongaretto@gmail.com",
+        "password": "asd1234",
+        "role": "Owner",
+        "firstName": "Franco",
+        "lastName": "Longaretto",
+        "dni": "40017532",
+        "phoneNumber": "02235804238"
+    },
+    {
+        "id": 9,
+        "email": "franco@gmail.com",
+        "password": "asd1234",
+        "role": "Keeper",
+        "firstName": "Fran",
+        "lastName": "Test",
+        "dni": "40017532",
+        "phoneNumber": "02235804238"
+    },
+    {
+        "id": 10,
+        "email": "santi@gmail.com",
+        "password": "123456",
+        "role": "Owner",
+        "firstName": "santiago",
+        "lastName": "lopez",
+        "dni": "34344343",
+        "phoneNumber": "2223322"
+    }
+]

@@ -1,0 +1,58 @@
+
+.login-form {
+     width: 500px;
+     border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.radioSize {
+     height: 20px !important;
+     margin-left: 10px !important;
+     width: 20px !important;
+   }
+
+.btn-fix{
+     margin-top: 20% !important;
+}
+
+.text-strong{
+     font-size: 20px !important; 
+     font-weight: bold;
+}
+
+.buttons-site{
+     margin: 15px 0;
+}
+
+/* -------------- HOME OWNER -------------- */
+.check__message{
+     margin: 0;
+     font-weight: bold;
+     color: #3cff00;
+     padding: 10px 20px;
+}
+
+/* tables Site */
+table{
+     width: 100%;
+     border-collapse: collapse;
+     text-align: left;
+     overflow: hidden;
+}
+
+tr{
+     background-color: #9db7dd4f;
+}
+
+td, th{
+     border-top: 1px solid #ECF0F1;
+     padding: 10px;
+}
+
+td{
+     border-left: 1px solid #ECF0F1;
+     border-right: 1px solid #ECF0F1;
+}
+
+th{
+     background-color: #39ace7;
+}
