@@ -74,13 +74,13 @@
             }
 
             // Move the temp image file to the images/ directory
-            $petImageNameNoExtension = substr($petImg_file["name"], 0, strpos($petImg_file["name"], "."));
+
             if (isset($vaccinationImg_file)) {
                 move_uploaded_file(
                     // Temp image location
                     $vaccinationImg_file["tmp_name"],
                     // New image location
-                    IMG_PATH . "/vaccination/". $petImageNameNoExtension . "_" . $vaccinationImg_file["name"]
+                    IMG_PATH . "/vaccination/". $vaccinationImg_file["name"]
                 );
             }
             if (isset($petImg_file)) {
@@ -132,22 +132,25 @@
 
         }
 
-        public function Add($race, $size, $description, $vaccinationImg, $petImage)
+        public function Add($type, $race, $size, $description, $vaccinationImg, $petImage)
         {
             //var_dump($vaccinationImg["name"]);
             $pet = new Pet();
+            $pet->setIdUser($_SESSION["loggedUser"]->id);
+            $pet->setType($type);
             $pet->setRace($race);
             $pet->setSize($size);
             //$pet->setVaccination($vaccinationImg);//JSON
             $pet->setVaccination($vaccinationImg["name"]);
             $pet->setDescription($description);
+            
             //$pet->setImage($petImage); //JSON
             $pet->setImage($petImage["name"]);
-            $pet->setIdUser($_SESSION["loggedUser"]->id);
+            
 
             if($pet != null){
                 //$this->PetDAO->Add($pet);
-                var_dump($pet);
+                //var_dump($pet);
                 $this->PetDAOBD->Add($pet);
                 $this->UploadImage();
                 //$this->UploadImageBD();
