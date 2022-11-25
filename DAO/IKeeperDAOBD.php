@@ -8,6 +8,6 @@ interface IKeeperDAOBD{
     function Add(Keeper $newKeeper);
     function GetAllPDO();
     function GetById($id);
-    function GetAllFilterPDO($dateStart, $dateEnd);
+    function GetAllFilterPDO($dateStart, $dateEnd, $size, $type);
 }
 ?>

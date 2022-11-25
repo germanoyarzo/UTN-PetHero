@@ -52,7 +52,7 @@
                 {
                     $pet = new Pet();
                     $pet->setId($content["id"]);
-                    $pet->setIdOwner($content["idOwner"]);
+                    $pet->setIdUser($content["idUser"]);
                     $pet->setRace($content["race"]);
                     $pet->setSize($content["size"]);
                     $pet->setVaccination($content["vaccination"]);

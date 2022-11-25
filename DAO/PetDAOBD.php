@@ -12,11 +12,8 @@
         private $connection;
         private $tableName = "pet";
 
-
         public function GetAllPDO() {
             try {
-                
-                
                 $petList = array();
                 $query = "SELECT * FROM " . $this->tableName;
                 $this->connection = Connection::getInstance();
@@ -25,13 +22,12 @@
                     $pet = new Pet();
                     $pet->setId($row["id"]);
                     $pet->setIdUser($row["idUser"]);
+                    $pet->setType($row["type"]);
                     $pet->setRace($row["race"]);
                     $pet->setSize($row["size"]);
                     $pet->setVaccination($row["vaccination"]);
                     $pet->setDescription($row["description"]);
-                    $pet->setImage($row["image"]); 
-                
-                    
+                    $pet->setImage($row["image"]);
 
                     array_push($petList, $pet);
                 }
@@ -40,7 +36,6 @@
                 throw $ex;
             }
         }
-
 
         public function GetById($id) 
         {
@@ -58,10 +53,10 @@
                 
                 foreach ($resultSet as $row)
                 {      
-
                     $pet = new Pet();
                     $pet->setId($row["id"]);
                     $pet->setIdUser($row["idUser"]);
+                    $pet->setType($row["type"]);
                     $pet->setRace($row["race"]);
                     $pet->setSize($row["size"]);
                     $pet->setVaccination($row["vaccination"]);
@@ -70,9 +65,9 @@
                     
                     array_push($petList, $pet);
                 }
-    
-                    ///return the array in position 0
-                    return (count($petList) > 0) ? $petList[0] : null;
+
+                ///return the array in position 0
+                return (count($petList) > 0) ? $petList[0] : null;
             }catch(\PDOException $ex)
             {
                 throw $ex;
@@ -82,17 +77,18 @@
         {
             try
             {
-                var_dump($pet);
-                $query = "INSERT INTO ".$this->tableName." (id,idUser,race ,size ,vaccination , description, image ) VALUES (:id, :idUser, :race, :size, :vaccination, :description, :image);";
-                
+                //var_dump($pet);
+                $query = "INSERT INTO ".$this->tableName." (id,idUser, type, race, size ,vaccination , description, image ) VALUES (:id, :idUser, :type, :race, :size, :vaccination, :description, :image);";
+
                 $parameters["id"] = $pet->getId();
                 $parameters["idUser"] = $pet->getIdUser();
+                $parameters["type"] = $pet->getType();
                 $parameters["race"] = $pet->getRace();
                 $parameters["size"] = $pet->getSize();
                 $parameters["vaccination"] = $pet->getVaccination();
                 $parameters["description"] = $pet->getDescription();
                 $parameters["image"] = $pet->getImage();
-    
+                
                 $this->connection = Connection::GetInstance();
     
                 $this->connection->ExecuteNonQuery($query, $parameters);

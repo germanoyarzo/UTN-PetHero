@@ -8,5 +8,6 @@ interface IBookDAOBD{
     //function Remove($id);
     function GetAllPDO();
     function GetById($id);
+    function GetBookByKeeper($keeperId);
 }
 ?>

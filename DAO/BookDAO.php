@@ -78,8 +78,8 @@
                    
                     $Book = new Book();
                     $Book->setId($value["id"]);
-                    $Book->setIdKeeper($value["idKeeper"]);
-                    $Book->setIdOwner($value["idOwner"]);
+                    $Book->setKeeper($value["idKeeper"]);
+                    $Book->setUser($value["idOwner"]);
                     //$Book->setDateBook($value["dateKeeper"]);
 
                     array_push($this->bookList, $Book);
