@@ -12,6 +12,7 @@
      <link rel="stylesheet" href="<?php echo CSS_PATH ?>estilos.css">
      <link rel="stylesheet" href="<?php echo CSS_PATH ?>footer.css">
      <link rel="stylesheet" href="<?php echo CSS_PATH ?>navbar.css">
+     <link rel="stylesheet" href="<?php echo CSS_PATH ?>chat.css">
      <link rel="stylesheet" href="<?php echo CSS_PATH ?>style.css">
 
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

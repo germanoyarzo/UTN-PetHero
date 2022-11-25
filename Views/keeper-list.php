@@ -25,18 +25,19 @@
                 <table style="text-align:center;">
                     <thead style="color:white">
                         <tr> 
+                            <th>Pet</th>
                             <th>Size</th>
                             <th>Salary</th>
                             <th>Available</th>
                             <th>Date Start</th>
                             <th>Date End</th>
                             <th>Total Days</th>
-                            <th>Total $</th>
                         </tr>
                     </thead>
                     <tbody>
                     <?php foreach($keeperList as $keeper) { ?>
                         <tr>
+                            <td><?php echo $keeper->getTypePet() ?></td>
                             <td><?php echo $keeper->getSize() ?></td>
                             <td><?php echo $keeper->getSalary() ?></td>
                             <td><?php echo $keeper->getAvailable() ?></td>
@@ -44,7 +45,7 @@
                             <td><?php echo $keeper->getDateEnd() ?></td>
                             <td>
                                 <?php
-                                    //***total days */
+                                    /* total days */
                                     $datetime1 = strtotime($keeper->getDateStart());
                                     $datetime2 = strtotime($keeper->getDateEnd());
                                     $difference = $datetime2 - $datetime1;
@@ -52,22 +53,15 @@
                                     // 24 * 60 * 60 = 86400 seconds
                                     $result = abs(round($difference / 86400));
                                     echo $result;
-                                    
                                 ?>
-                            </td>   
-                            <td>
-                                <?php
-                                    $amount= $result * $keeper->getSalary();
-                                    echo $amount;
-                                ?>
-                            </td> 
+                            </td>
                         </tr>
                     <?php } ?>
                     </tbody>
                 </table>
             </div>
-            <?php if($errorMessage){ ?>
-                <p><?php echo $errorMessage ?></p>
+            <?php if($frontMessage){ ?>
+                <p><?php echo $frontMessage ?></p>
             <?php } ?>
 
             <div align="center">

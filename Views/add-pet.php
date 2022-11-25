@@ -9,6 +9,12 @@
     <form action="<?php echo FRONT_ROOT?>Pet/Add" method="POST" enctype="multipart/form-data" class="mainForm__form">
       <h2 class="mainForm__form--title">ADD PET</h2>
 
+      <select class="fadeIn second" name="type" id="type" required>
+        <option disabled selected>Seleccionar Pet</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+      </select>
+
       <input type="text" id="race" class="mainForm__form--input fadeIn second" name="race" placeholder="Race" required>
 
       <select class="fadeIn second" name="size" id="size" required>

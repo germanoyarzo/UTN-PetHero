@@ -33,7 +33,13 @@ a {
   font-weight: 600;
 }
 
-a:hover {
+a {
+  color: #2392ce;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+h5 {
   color: #39ace7;
   text-decoration: none;
 }
@@ -326,8 +332,9 @@ label{
 
 /* -------------- FORM FORM KEEPER --------------*/
 .mainFormKeeper .mainForm__container{
-  max-width: 800px;
+  max-width: 1000px;
 }
+
 .mainFormKeeper .mainForm__form--submit {
   max-width: 250px;
 }
@@ -545,8 +552,8 @@ table{
 }
 
 table img{
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   object-fit: contain;
 }
 
@@ -759,3 +766,4 @@ td, th {
 *:focus {
   outline: none;
 }
+

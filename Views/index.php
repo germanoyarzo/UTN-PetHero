@@ -22,7 +22,7 @@
 
     <!-- Remind Passowrd -->
     <div class="mainForm__Forgot">
-      <a class="mainForm__Forgot--item" href="#">Forgot Password?</a>
+      <a class="mainForm__Forgot--item" href="<?php echo FRONT_ROOT ?>User/ShowUserRecovery"><h6>Forgot Password?</h6></a>
     </div>
     
   </div>

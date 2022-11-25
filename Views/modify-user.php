@@ -1,13 +1,18 @@
-
-
+<?php
+    require_once("validate-session.php");
+    if($_SESSION["loggedUser"]->getRole() === "Owner")
+    {
+        include('navOwner.php');
+    }else{
+        include('navKeeper.php');
+    }
+?>
 <div class="wrapper fadeInDown">
     <div id="formContent">
       <!-- Tabs Titles -->
-
-
       <!-- Login Form -->
-      <form action="<?php echo FRONT_ROOT?>User/Add" method="POST">
-        <h2 style="color:#39ace7">REGISTRATION</h2>
+      <form action="<?php echo FRONT_ROOT?>User/Modify" method="POST">
+        <h2 style="color:#39ace7">MODIFY</h2>
         <input type="email" id="email" class="fadeIn second" name="email" placeholder="email" required>
         <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" required>
         <select id="role" class="fadeIn third" name="role" required>
@@ -19,8 +24,12 @@
         <input type="text" id="dni" class="fadeIn third" name="dni" placeholder="dni" required>
         <input type="text" id="phoneNumber" class="fadeIn third" name="phoneNumber" placeholder="phone number" required>
         <input type="text" id="keyword" name="keyword" value="" class="form-control" placeholder="keyword" required>
-        <input type="submit" class="fadeIn fourth" value="Sign Up">
-        <a href="<?php echo FRONT_ROOT ?>User/Index" class="fadeIn third">Cancel</a>
+        <input type="submit" class="fadeIn fourth" value="Modify">
+        <?php if($_SESSION["loggedUser"]->getRole()=="Owner"){ ?>
+                <a href="<?php echo FRONT_ROOT ?>Owner/HomeOwner" class="btn btn-outline-primary">Cancel</a>
+            <?php }else{ ?>
+                <a href="<?php echo FRONT_ROOT ?>User/HomeKeeper" class="btn btn-outline-primary">Cancel</a>
+            <?php } ?>
         <div>
           <?php
               if($message != "") {
