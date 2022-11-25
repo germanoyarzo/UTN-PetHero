@@ -9,7 +9,7 @@
             return $this->totalAmount;
         }
 
-        public function setRace($totalAmount){
+        public function setTotalAmount($totalAmount){
             $this->totalAmount = $totalAmount;
             return $this;
         }
@@ -18,7 +18,7 @@
             return $this->date;
         }
 
-        public function setRace($date){
+        public function setDate($date){
             $this->date = $date;
             return $this;
         }

@@ -5,6 +5,7 @@
     class Pet {
         private $id;
         private $idUser;
+        private $type;
         private $race;
         private $size;
         private $vaccination; // Imagen de vacunacion
@@ -26,6 +27,15 @@
 
         public function setIdUser($idUser){
             $this->idUser = $idUser;
+            return $this;
+        }
+
+        public function getType(){
+            return $this->type;
+        }
+
+        public function setType($type){
+            $this->type = $type;
             return $this;
         }
 

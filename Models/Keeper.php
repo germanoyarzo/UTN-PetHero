@@ -3,6 +3,8 @@
 
     class Keeper{
         private $id;
+        private $idKeeper;
+        private $typePet;
         private $size; ///small, medium or big
         private $salary; 
         private $available; 
@@ -23,12 +25,25 @@
          *
          * @return  self
          */ 
+        public function setIdKeeper($idKeeper)
+        {
+                $this->idKeeper = $idKeeper;
+
+                return $this;
+        }
+
+        public function getIdKeeper()
+        {
+                return $this->idKeeper;
+        }
+
         public function setId($id)
         {
                 $this->id = $id;
 
                 return $this;
         }
+
         public function getsize()
         {
                 return $this->size;
@@ -39,6 +54,18 @@
         {
                 $this->size = $size;
 
+                return $this;
+        }
+
+        public function getTypePet()
+        {
+                return $this->typePet;
+        }
+
+        
+        public function setTypePet($typePet)
+        {
+                $this->typePet = $typePet;
                 return $this;
         }
         
@@ -125,4 +152,3 @@
                 return $this;
         }
     }
-?>

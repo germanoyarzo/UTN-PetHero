@@ -9,7 +9,7 @@
             return $this->description;
         }
 
-        public function setRace($description){
+        public function setDescription($description){
             $this->description = $description;
             return $this;
         }
@@ -18,7 +18,7 @@
             return $this->rating;
         }
 
-        public function setRace($rating){
+        public function setRating($rating){
             $this->rating = $rating;
             return $this;
         }
